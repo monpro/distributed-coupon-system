@@ -92,7 +92,7 @@ public class Constants {
      */
     public class PassTable{
         /**Pass HBase Table Name*/
-        public static final String TABLE_NAME = "pb:pass";
+        public static final String TABLE_NAME = "pb:Pass";
         /**column family for basic info*/
         public static final String FAMILY_I = "i";
         /**user id*/
