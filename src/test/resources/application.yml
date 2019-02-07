@@ -13,7 +13,7 @@ spring:
       concurrency: 4
 
 server:
-  port: 8080
+  port:9527
 
 logging:
   level: debug
