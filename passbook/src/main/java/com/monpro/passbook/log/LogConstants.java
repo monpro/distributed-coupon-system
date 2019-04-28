@@ -1,4 +1,4 @@
-package com.monpro.passbook.log;
+package main.java.com.monpro.passbook.log;
 
 /**
  * Constants for logs

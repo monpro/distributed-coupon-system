@@ -1,4 +1,4 @@
-package com.monpro.passbook.log;
+package main.java.com.monpro.passbook.log;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

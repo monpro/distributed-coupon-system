@@ -1,4 +1,4 @@
-package com.monpro.passbook.vo;
+package main.java.com.monpro.passbook.vo;
 
 import com.google.common.base.Enums;
 import com.monpro.passbook.constant.FeedbackType;

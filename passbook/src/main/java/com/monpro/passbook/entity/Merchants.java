@@ -1,4 +1,4 @@
-package com.monpro.passbook.entity;
+package main.java.com.monpro.passbook.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

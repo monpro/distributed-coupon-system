@@ -1,4 +1,4 @@
-package com.monpro.passbook.mapper;
+package main.java.com.monpro.passbook.mapper;
 
 
 import com.monpro.passbook.constant.Constants;

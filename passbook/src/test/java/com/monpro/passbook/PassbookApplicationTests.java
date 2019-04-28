@@ -1,4 +1,4 @@
-package com.monpro.passbook;
+package test.java.com.monpro.passbook;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

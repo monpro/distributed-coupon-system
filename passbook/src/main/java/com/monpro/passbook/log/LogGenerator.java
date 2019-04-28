@@ -1,4 +1,4 @@
-package com.monpro.passbook.log;
+package main.java.com.monpro.passbook.log;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;

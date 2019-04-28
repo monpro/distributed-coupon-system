@@ -1,4 +1,4 @@
-package com.monpro.passbook.constant;
+package main.java.com.monpro.passbook.constant;
 
 /**
  * <h1>status of coupons</h1>

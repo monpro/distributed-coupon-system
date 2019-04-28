@@ -1,4 +1,4 @@
-package com.monpro.passbook.vo;
+package main.java.com.monpro.passbook.vo;
 
 
 import lombok.AllArgsConstructor;

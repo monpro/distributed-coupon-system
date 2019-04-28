@@ -1,4 +1,4 @@
-package com.monpro.passbook.dao;
+package main.java.com.monpro.passbook.dao;
 
 
 import com.monpro.passbook.entity.Merchants;
