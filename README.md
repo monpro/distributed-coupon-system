@@ -1,2 +1,2 @@
 # distributed-coupon-system
-A passbook project
+Merchants service
