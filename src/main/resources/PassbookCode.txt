@@ -1,0 +1,63 @@
+1. 上传优惠券 token
+    GET: 127.0.0.1:9528/upload
+    merchantsId - 12
+    PassTemplateId: e3ec06eaacb2f1dca901556991df7bb0
+
+2. 创建用户 -- 用户 109452
+    POST: 127.0.0.1:9528/passbook/createuser
+    {
+        "baseInfo": {
+            "name": "imooc",
+            "age": 10,
+            "sex": "m"
+        },
+        "otherInfo": {
+            "phone": "1234567890",
+            "address": "北京市海淀区"
+        }
+    }
+
+3. 库存信息
+    GET: 127.0.0.1:9528/passbook/inventoryinfo?userId=109452
+
+4. 获取优惠券 -- 获取的是带有 token 的优惠券
+    POST: 127.0.0.1:9528/passbook/gainpasstemplate
+    {
+        "userId": 109452,
+        "passTemplate": {
+            "id": 12,
+            "title": "慕课网优惠券-2",
+            "hasToken": true
+        }
+    }
+
+5. userpassinfo
+    GET: 127.0.0.1:9528/passbook/userpassinfo?userId=109452
+
+6. userusedpassinfo
+    GET: 127.0.0.1:9528/passbook/userusedpassinfo?userId=109452
+
+7. userusepass
+    POST: 127.0.0.1:9528/passbook/userusepass
+    {
+        "userId": 109452,
+        "templateId": "e3ec06eaacb2f1dca901556991df7bb0"
+    }
+
+8. 创建评论信息
+    POST: 127.0.0.1:9528/passbook/createfeedback
+    {
+        "userId": 109452,
+        "type": "app",
+        "templateId": -1,
+        "comment": "来慕课网学习分布式卡包应用"
+    }
+    {
+        "userId": 109452,
+        "type": "pass",
+        "templateId": "e3ec06eaacb2f1dca901556991df7bb0",
+        "comment": "来慕课网学习分布式卡包应用"
+    }
+
+9. 查看评论信息
+    GET: 127.0.0.1:9528/passbook/getfeedback?userId=109452

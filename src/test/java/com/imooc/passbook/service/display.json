@@ -1,0 +1,53 @@
+{
+  "data": {
+    "passTemplateInfos": [
+      {
+        "merchants": {
+          "address": "北京市",
+          "businessLicenseUrl": "www.imooc.com",
+          "id": 9,
+          "isAudit": true,
+          "logoUrl": "www.imooc.com",
+          "name": "慕课",
+          "phone": "1234567890"
+        },
+        "passTemplate": {
+          "background": 2,
+          "desc": "详情: 慕课",
+          "end": 1529337600000,
+          "hasToken": true,
+          "id": 9,
+          "limit": 10000,
+          "start": 1527609600000,
+          "summary": "简介: 慕课",
+          "title": "慕课-2"
+        }
+      },
+      {
+        "merchants": {
+          "address": "北京市",
+          "businessLicenseUrl": "www.imooc.com",
+          "id": 9,
+          "isAudit": true,
+          "logoUrl": "www.imooc.com",
+          "name": "慕课",
+          "phone": "1234567890"
+        },
+        "passTemplate": {
+          "background": 2,
+          "desc": "详情: 慕课",
+          "end": 1529337600000,
+          "hasToken": false,
+          "id": 9,
+          "limit": 10000,
+          "start": 1527609600000,
+          "summary": "简介: 慕课",
+          "title": "慕课-1"
+        }
+      }
+    ],
+    "userId": 149276
+  },
+  "errorCode": 0,
+  "errorMsg": ""
+}
