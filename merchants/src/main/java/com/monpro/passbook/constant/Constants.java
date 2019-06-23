@@ -1,20 +1,17 @@
-package com.monpro.passbook.constant;
+package com.imooc.passbook.constant;
 
-
-/***
- *
- * common constants
- * developed by monpro
+/**
+ * <h1>普通(通用)常量定义</h1>
+ * Created by Qinyi.
  */
 public class Constants {
-    /**kafka topic of coupons given by merchants */
+
+    /** 商户优惠券投放的 Kafka Topic */
     public static final String TEMPLATE_TOPIC = "merchants-template";
 
-    /** token string*/
+    /** token string */
     public static final String TOKEN_STRING = "token";
 
-    /**token info */
-    public static final String TOKEN = "monpro-passbook-merchants";
+    /** token info */
+    public static final String TOKEN = "imooc-passbook-merchants";
 }
-
-

@@ -1,10 +1,10 @@
 spring:
   application:
-    name: MonproMerchants
+    name: ImoocMerchants
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true
     username: root
-    password: 123456
+    password:
   kafka:
     bootstrap-servers: 127.0.0.1:9092
     consumer:
@@ -13,8 +13,8 @@ spring:
       concurrency: 4
 
 server:
-  port:9527
+  port: 9527
 
 logging:
   level: debug
-  file: monpro-merchants.log
+  file: imooc-merchants.log

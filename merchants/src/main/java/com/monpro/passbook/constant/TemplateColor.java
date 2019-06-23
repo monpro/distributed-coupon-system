@@ -1,15 +1,18 @@
-package com.monpro.passbook.constant;
+package com.imooc.passbook.constant;
 
+/**
+ * Created by Qinyi.
+ */
 public enum TemplateColor {
 
-    RED(1,"red color"),
-    GREEN(2,"green color"),
-    BLUE(3,"blue color");
+    RED(1, "红色"),
+    GREEN(2, "绿色"),
+    BLUE(3, "蓝色");
 
-    /** color code*/
+    /** 颜色代码 */
     private Integer code;
 
-    /** color description*/
+    /** 颜色描述 */
     private String color;
 
     TemplateColor(Integer code, String color) {

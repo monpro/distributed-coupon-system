@@ -1,0 +1,48 @@
+需要启动的服务:
+    hbase, mysql, kafka, redis
+需要清空的数据:
+    1. hbase 的四张表
+    2. mysql 商户数据
+    3. /tmp/token/ 下面的优惠券 token 数据
+    4. redis 中的数据
+
+1. 创建商户 -- 商户 id 12
+    POST: 127.0.0.1:9527/merchants/create
+    header: token/imooc-passbook-merchants
+    {
+        "name": "慕课网",
+        "logoUrl": "www.imooc.com",
+        "businessLicenseUrl": "www.imooc.com",
+        "phone": "1234567890",
+        "address": "北京市朝阳区"
+    }
+
+2. 查看商户信息
+    GET: 127.0.0.1:9527/merchants/12
+    header: token/imooc-passbook-merchants
+
+3. 投放优惠券
+    POST: 127.0.0.1:9527/merchants/drop
+    header: token/imooc-passbook-merchants
+    {
+        "background": 1,
+        "desc": "慕课网优惠券",
+        "end": "2018-06-30",
+        "hasToken": false,
+        "id": 12,
+        "limit": 1000,
+        "start": "2018-06-01",
+        "summary": "优惠券简介",
+        "title": "慕课网优惠券-1"
+    }
+    {
+        "background": 1,
+        "desc": "慕课网优惠券",
+        "end": "2018-06-30",
+        "hasToken": true,
+        "id": 12,
+        "limit": 1000,
+        "start": "2018-06-01",
+        "summary": "优惠券简介",
+        "title": "慕课网优惠券-2"
+    }
