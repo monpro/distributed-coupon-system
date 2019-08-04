@@ -69,7 +69,7 @@ GET: 127.0.0.1:9528/passbook/gainpasstemplate
 
 ## Create feedback
 ```bash
-1. POST: 127.0.0.1:9528/passbook/createfeedback
+POST: 127.0.0.1:9528/passbook/createfeedback
    {
        "userId": 109452,
        "type": "app",
