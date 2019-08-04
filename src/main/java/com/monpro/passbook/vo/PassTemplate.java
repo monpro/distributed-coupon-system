@@ -1,50 +1,50 @@
-package com.imooc.passbook.vo;
+package com.monpro.passbook.vo;
 
-import com.imooc.passbook.constant.ErrorCode;
-import com.imooc.passbook.dao.MerchantsDao;
+import com.monpro.passbook.constant.ErrorCode;
+import com.monpro.passbook.dao.MerchantsDao;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-/**<h1>投放的优惠券对象定义</h1>
- * Created by Qinyi.
+/**<h1>Passsbook Object </h1>
+ * Created by monpro.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class PassTemplate {
 
-    /** 所属商户 id */
+    /** merchants id of passbook */
     private Integer id;
 
-    /** 优惠券标题 */
+    /** passbook title */
     private String title;
 
-    /** 优惠券摘要 */
+    /** passbook summary */
     private String summary;
 
-    /** 优惠券的详细信息 */
+    /** passbook desc */
     private String desc;
 
-    /** 最大个数限制 */
+    /** the largest limit number of passbook */
     private Long limit;
 
-    /** 优惠券是否有 Token, 用于商户核销 */
-    private Boolean hasToken; // token 存储于 Redis Set 中, 每次领取从 Redis 中获取
+    /** whether passbook has Token */
+    private Boolean hasToken; // token is stored in Redis Set
 
-    /** 优惠券背景色 */
+    /** background color of passbook */
     private Integer background;
 
-    /** 优惠券开始时间 */
+    /** start date of passbook */
     private Date start;
 
-    /** 优惠券结束时间 */
+    /** end date of passbook */
     private Date end;
 
     /**
-     * <h2>校验优惠券对象的有效性</h2>
+     * <h2>validate passbook</h2>
      * @param merchantsDao {@link MerchantsDao}
      * @return {@link ErrorCode}
      * */

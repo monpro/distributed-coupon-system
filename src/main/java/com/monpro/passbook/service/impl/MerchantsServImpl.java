@@ -1,15 +1,15 @@
-package com.imooc.passbook.service.impl;
+package com.monpro.passbook.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.imooc.passbook.constant.Constants;
-import com.imooc.passbook.constant.ErrorCode;
-import com.imooc.passbook.dao.MerchantsDao;
-import com.imooc.passbook.entity.Merchants;
-import com.imooc.passbook.service.IMerchantsServ;
-import com.imooc.passbook.vo.CreateMerchantsRequest;
-import com.imooc.passbook.vo.CreateMerchantsResponse;
-import com.imooc.passbook.vo.PassTemplate;
-import com.imooc.passbook.vo.Response;
+import com.monpro.passbook.constant.Constants;
+import com.monpro.passbook.constant.ErrorCode;
+import com.monpro.passbook.dao.MerchantsDao;
+import com.monpro.passbook.entity.Merchants;
+import com.monpro.passbook.service.IMerchantsServ;
+import com.monpro.passbook.vo.CreateMerchantsRequest;
+import com.monpro.passbook.vo.CreateMerchantsResponse;
+import com.monpro.passbook.vo.PassTemplate;
+import com.monpro.passbook.vo.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -17,17 +17,17 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * <h1>商户服务接口实现</h1>
- * Created by Qinyi.
+ * <h1>Impl of merchants service interface</h1>
+ * Created by monpro.
  */
 @Slf4j
 @Service
 public class MerchantsServImpl implements IMerchantsServ {
 
-    /** Merchants 数据库接口 */
+    /** Merchants database interface */
     private final MerchantsDao merchantsDao;
 
-    /** kafka 客户端 */
+    /** kafka client */
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     @Autowired

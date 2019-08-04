@@ -1,12 +1,12 @@
-package com.imooc.passbook.service;
+package com.monpro.passbook.service;
 
-import com.imooc.passbook.vo.CreateMerchantsRequest;
-import com.imooc.passbook.vo.PassTemplate;
-import com.imooc.passbook.vo.Response;
+import com.monpro.passbook.vo.CreateMerchantsRequest;
+import com.monpro.passbook.vo.PassTemplate;
+import com.monpro.passbook.vo.Response;
 
 /**
  * <h1>对商户服务接口定义</h1>
- * Created by Qinyi.
+ * Created by monpro.
  */
 public interface IMerchantsServ {
 

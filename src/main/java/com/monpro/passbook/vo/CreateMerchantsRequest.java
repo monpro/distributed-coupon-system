@@ -1,38 +1,33 @@
-package com.imooc.passbook.vo;
+package com.monpro.passbook.vo;
 
-import com.imooc.passbook.constant.ErrorCode;
-import com.imooc.passbook.dao.MerchantsDao;
-import com.imooc.passbook.entity.Merchants;
+import com.monpro.passbook.constant.ErrorCode;
+import com.monpro.passbook.dao.MerchantsDao;
+import com.monpro.passbook.entity.Merchants;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * <h2>创建商户请求对象</h2>
- * Created by Qinyi.
+ * <h2>Create Merchants Object</h2>
+ * Created by monpro.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class CreateMerchantsRequest {
 
-    /** 商户名称 */
     private String name;
 
-    /** 商户 logo */
     private String logoUrl;
 
-    /** 商户营业执照 */
     private String businessLicenseUrl;
 
-    /** 商户联系电话 */
     private String phone;
 
-    /** 商户地址 */
     private String address;
 
     /**
-     * <h2>验证请求的有效性</h2>
+     * <h2>Validate Requests</h2>
      * @param merchantsDao {@link MerchantsDao}
      * @return {@link ErrorCode}
      * */
@@ -62,7 +57,7 @@ public class CreateMerchantsRequest {
     }
 
     /**
-     * <h2>将请求对象转换为商户对象</h2>
+     * <h2>convert request object to merchants object</h2>
      * @return {@link Merchants}
      * */
     public Merchants toMerchants() {

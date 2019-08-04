@@ -1,8 +1,8 @@
-package com.imooc.passbook.security;
+package com.monpro.passbook.security;
 
 /**
- * <h1>用 ThreadLocal 去单独存储每一个线程携带的 Token 信息</h1>
- * Created by Qinyi.
+ * <h1>Use ThreadLocal to store Token info of every thread individually</h1>
+ * Created by monpro.
  */
 public class AccessContext {
 

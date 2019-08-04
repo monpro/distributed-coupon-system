@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.imooc.passbook</groupId>
+	<groupId>com.monpro.passbook</groupId>
 	<artifactId>merchants</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>merchants</name>
-	<description>imooc passbook of merchants</description>
+	<description>monpro passbook of merchants</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -81,7 +81,7 @@
     </dependencies>
 
 	<build>
-        <finalName>ImoocMerchants</finalName>
+        <finalName>monproMerchants</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

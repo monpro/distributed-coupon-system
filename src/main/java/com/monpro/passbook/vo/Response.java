@@ -1,30 +1,29 @@
-package com.imooc.passbook.vo;
+package com.monpro.passbook.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * <h1>通用的响应对象</h1>
- * Created by Qinyi.
+ * <h1>Command Response Object</h1>
+ * Created by monpro.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Response {
 
-    /** 错误码, 正确返回 0 */
+    /** Error code, return 0 if no errors*/
     private Integer errorCode = 0;
 
-    /** 错误信息, 正确返回空字符串 */
+    /** Error message, return "" if no errors */
     private String errorMsg = "";
 
-    /** 返回值对象 */
+    /** return data object */
     private Object data;
 
     /**
-     * <h2>正确的响应构造函数</h2>
-     * @param data 返回值对象
+     * @param data object of return value
      * */
     public Response(Object data) {
         this.data = data;

@@ -1,24 +1,23 @@
-package com.imooc.passbook.dao;
+package com.monpro.passbook.dao;
 
-import com.imooc.passbook.entity.Merchants;
+import com.monpro.passbook.entity.Merchants;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * <h1>Merchants Dao 接口</h1>
- * Created by Qinyi.
+ * Created by monpro.
  */
 public interface MerchantsDao extends JpaRepository<Merchants, Integer> {
 
     /**
-     * <h2>根据 id 获取商户对象</h2>
-     * @param id 商户 id
+     * <h2>find merchants object according to id </h2>
+     * @param id merchants id
      * @return {@link Merchants}
      * */
     Merchants findById(Integer id);
 
     /**
-     * <h2>根据商户名称获取商户对象</h2>
-     * @param name 商户名称
+     * <h2>find merchants object according to name</h2>
+     * @param name merchants name
      * @return {@link Merchants}
      * */
     Merchants findByName(String name);

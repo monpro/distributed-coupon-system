@@ -1,11 +1,11 @@
-package com.imooc.passbook;
+package com.monpro.passbook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * <h1>测试用例入口</h1>
- * Created by Qinyi.
+ * <h1>entrance of test</h1>
+ * Created by monpro.
  */
 @SpringBootApplication
 public class MerchantsApplication {

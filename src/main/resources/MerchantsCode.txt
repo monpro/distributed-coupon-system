@@ -8,22 +8,22 @@
 
 1. 创建商户 -- 商户 id 12
     POST: 127.0.0.1:9527/merchants/create
-    header: token/imooc-passbook-merchants
+    header: token/monpro-passbook-merchants
     {
         "name": "慕课网",
-        "logoUrl": "www.imooc.com",
-        "businessLicenseUrl": "www.imooc.com",
+        "logoUrl": "www.monpro.com",
+        "businessLicenseUrl": "www.monpro.com",
         "phone": "1234567890",
         "address": "北京市朝阳区"
     }
 
 2. 查看商户信息
     GET: 127.0.0.1:9527/merchants/12
-    header: token/imooc-passbook-merchants
+    header: token/monpro-passbook-merchants
 
 3. 投放优惠券
     POST: 127.0.0.1:9527/merchants/drop
-    header: token/imooc-passbook-merchants
+    header: token/monpro-passbook-merchants
     {
         "background": 1,
         "desc": "慕课网优惠券",

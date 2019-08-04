@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ImoocMerchants
+    name: monproMerchants
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true
     username: root
@@ -17,4 +17,4 @@ server:
 
 logging:
   level: debug
-  file: imooc-merchants.log
+  file: monpro-merchants.log

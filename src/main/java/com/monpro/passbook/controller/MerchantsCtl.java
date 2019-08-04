@@ -1,10 +1,10 @@
-package com.imooc.passbook.controller;
+package com.monpro.passbook.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.imooc.passbook.service.IMerchantsServ;
-import com.imooc.passbook.vo.CreateMerchantsRequest;
-import com.imooc.passbook.vo.PassTemplate;
-import com.imooc.passbook.vo.Response;
+import com.monpro.passbook.service.IMerchantsServ;
+import com.monpro.passbook.vo.CreateMerchantsRequest;
+import com.monpro.passbook.vo.PassTemplate;
+import com.monpro.passbook.vo.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,15 +16,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * <h1>商户服务 Controller</h1>
- * Created by Qinyi.
+ * <h1>merchants service Controller</h1>
+ * Created by monpro.
  */
 @Slf4j
 @RestController
 @RequestMapping("/merchants")
 public class MerchantsCtl {
 
-    /** 商户服务接口 */
+    /** merchants service interface */
     private final IMerchantsServ merchantsServ;
 
     @Autowired
@@ -49,9 +49,9 @@ public class MerchantsCtl {
     }
 
     /**
-     * DropPassTemplates: {"background":1,"desc":"详情: 慕课 second",
+     * DropPassTemplates: {"background":1,"desc":"desc: test second",
      * "end":1528202373202,"hasToken":false,"id":9,"limit":1000,
-     * "start":1527338373202,"summary":"简介: 慕课","title":"title: 慕课"}
+     * "start":1527338373202,"summary":"summary: testClass","title":"title: monpro"}
      * */
     @ResponseBody
     @PostMapping("/drop")
