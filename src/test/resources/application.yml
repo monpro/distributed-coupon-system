@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Imooc-Passbook
+    name: monpro-Passbook
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true
     username: root
@@ -14,7 +14,7 @@ spring:
   data:
     hbase:
       quorum: 127.0.0.1:2181
-      rootDir: file:///Users/zhanghu05/QinyiZhang/Soft/hbase_data/root_dir
+      rootDir: file:///Users/zhanghu05/monproZhang/Soft/hbase_data/root_dir
       nodeParent: /hbase
   redis:
     host: 127.0.0.1
@@ -24,5 +24,5 @@ server:
   port: 9528
 
 logging:
-  file: imooc-passbook.log
+  file: monpro-passbook.log
   level: debug
