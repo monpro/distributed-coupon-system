@@ -47,7 +47,7 @@ GET: 127.0.0.1:9528/passbook/gainpasstemplate
     "userId": 109452,
     "passTemplate": {
         "id": 12,
-        "title": "test网优惠券-2",
+        "title": "test coupule 2",
         "hasToken": true
     }
 }
