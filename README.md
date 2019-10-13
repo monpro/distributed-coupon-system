@@ -35,6 +35,9 @@ Please use your Idea to import this project based on Maven
 | start      | the start time of coupon       | N      |
 | end        | the end time of coupon         | N      |
 
+## Design of this system
+
+![Alt text](https://github.com/monpro/distributed-coupon-system/blob/master/image.png)
 
 ## upload token of pass templates
 
