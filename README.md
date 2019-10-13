@@ -10,6 +10,16 @@ It use maven to manage dependencies.
 ```bash
 Please use your Idea to import this project based on Maven
 ```
+
+## attributes of merchants 
+
+Attribute	Unique
+name	Y
+logo_url	N
+business_license_url	N
+phone	N
+address	N
+
   
 ## upload token of pass templates
 
