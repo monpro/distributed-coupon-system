@@ -11,14 +11,15 @@ It use maven to manage dependencies.
 Please use your Idea to import this project based on Maven
 ```
 
-## attributes of merchants 
+## merchants Table Design
 
-Attribute	Unique
-name	Y
-logo_url	N
-business_license_url	N
-phone	N
-address	N
+| Attribute            | Unique |
+|----------------------|--------|
+| name                 | Y      |
+| logo_url             | N      |
+| business_license_url | N      |
+| phone                | N      |
+| address              | N      |
 
   
 ## upload token of pass templates
