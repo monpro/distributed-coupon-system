@@ -11,7 +11,7 @@ It use maven to manage dependencies.
 Please use your Idea to import this project based on Maven
 ```
 
-## merchants Table Design
+## Merchants Table Design
 
 | Attribute            | Unique |
 |----------------------|--------|
@@ -21,7 +21,21 @@ Please use your Idea to import this project based on Maven
 | phone                | N      |
 | address              | N      |
 
-  
+## Coupons Table Design
+
+| name       | desc                           | unique |
+|------------|--------------------------------|--------|
+| id         | the id of belonging merchants  | N      |
+| title      | the title of coupon            | Y      |
+| summary    |                                | N      |
+| desc       |                                | N      |
+| limit      | the limit number of coupon     | N      |
+| has_token  |                                | N      |
+| background | the background color of coupon | N      |
+| start      | the start time of coupon       | N      |
+| end        | the end time of coupon         | N      |
+
+
 ## upload token of pass templates
 
 ```bash
