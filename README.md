@@ -4,12 +4,16 @@ This is a scalable, maintainable backend service.
 
 It is mainly developed by SpringBoot, HBase, kafka to build a pipeline which can handle high concurrency with low latency.
 
+
+
 ## Installation
 
 It use maven to manage dependencies.
 ```bash
 Please use your Idea to import this project based on Maven
 ```
+
+
 
 ## Merchants Table Design
 
@@ -20,6 +24,8 @@ Please use your Idea to import this project based on Maven
 | business_license_url | N      |
 | phone                | N      |
 | address              | N      |
+
+
 
 ## Coupons Table Design
 
@@ -35,9 +41,13 @@ Please use your Idea to import this project based on Maven
 | start      | the start time of coupon       | N      |
 | end        | the end time of coupon         | N      |
 
+
+
 ## Design of this system
 
 ![Alt text](https://github.com/monpro/distributed-coupon-system/blob/master/image.png)
+
+
 
 ## upload token of pass templates
 
@@ -46,6 +56,8 @@ GET: 127.0.0.1:9528/upload
 merchantsId - 12
 PassTemplateId: e3ec06eaacb2f1dca901556991df7bb0
 ```
+
+
 
 ## Create User
 ```bash
@@ -63,10 +75,14 @@ POST: 127.0.0.1:9528/passbook/createuser
    }
 ```
 
+
+
 ## Get inventory Info
 ```bash
 GET: 127.0.0.1:9528/passbook/inventoryinfo?userId=109452
 ```
+
+
 
 ## Get Pass Template with token
 ```bash
@@ -81,6 +97,8 @@ GET: 127.0.0.1:9528/passbook/gainpasstemplate
 }
 ```
 
+
+
 ## User Operation
 ```bash
  userpassinfo
@@ -94,6 +112,8 @@ GET: 127.0.0.1:9528/passbook/gainpasstemplate
        "templateId": "e3ec06eaacb2f1dca901556991df7bb0"
    }
 ```
+
+
 
 ## Create feedback
 ```bash
@@ -111,6 +131,8 @@ POST: 127.0.0.1:9528/passbook/createfeedback
        "comment": ""
    }
 ```
+
+
 
 ## Contributing
 Currently only myself
