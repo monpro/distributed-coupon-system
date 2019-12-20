@@ -51,7 +51,7 @@ Please use your Idea to import this project based on Maven
 
 ## Design of the cache layer
 
-![Alt text](https://github.com/monpro/distributed-coupon-system/blob/master/images/cache_layer.png)
+![Alt text](https://github.com/monpro/distributed-coupon-system/blob/master/images/cache_layer.jpg)
 
 
 
