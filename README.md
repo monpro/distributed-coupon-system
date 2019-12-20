@@ -45,7 +45,7 @@ Please use your Idea to import this project based on Maven
 
 ## Design of this system
 
-![Alt text](https://github.com/monpro/distributed-coupon-system/blob/master/image.png)
+![Alt text](https://github.com/monpro/distributed-coupon-system/blob/master/images/project_design.png)
 
 
 
