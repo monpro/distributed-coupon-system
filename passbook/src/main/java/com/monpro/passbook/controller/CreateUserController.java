@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * <h1>创建用户服务</h1>
+ * <h1>CreateUserController</h1>
  * Created by monpro.
  */
 @Slf4j

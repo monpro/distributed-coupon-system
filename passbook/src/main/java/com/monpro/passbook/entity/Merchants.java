@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * <h1>商户对象模型</h1>
+ * <h1>Merchants class</h1>
  * Created by monpro.
  */
 @Data

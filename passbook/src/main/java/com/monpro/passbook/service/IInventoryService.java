@@ -9,7 +9,7 @@ import com.monpro.passbook.vo.Response;
 public interface IInventoryService {
 
     /**
-     * @param userId 用户 id
+     * @param userId
      * @return {@link Response}
      * */
     Response getInventoryInfo(Long userId) throws Exception;
